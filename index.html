@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TenantCheck | Redwood Collections</title>
+    <title>TenantCheck | Powered by Redwood Collections</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
             --brand-yellow: #FFD700;
-            --brand-dark-yellow: #E6C200;
         }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         .hero-bg { 
@@ -16,52 +15,86 @@
             background-size: cover;
             background-position: center;
         }
-        .bg-yellow-brand { background-color: var(--brand-yellow); }
-        .text-yellow-brand { color: var(--brand-dark-yellow); }
+        .check-icon { color: #000; font-weight: bold; margin-right: 0.5rem; }
     </style>
 </head>
 <body class="bg-white">
 
-    <nav class="border-b border-gray-200 py-4 px-6 flex justify-between items-center">
-        <img src="Redwood logo.png" alt="Redwood Collections" class="h-12">
-        <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider">
-            <a href="#" class="hover:text-yellow-600">Services</a>
-            <a href="#" class="hover:text-yellow-600">Our Approach</a>
-            <a href="#" class="hover:text-yellow-600 font-bold border-b-2 border-yellow-500">TenantCheck</a>
+    <nav class="py-4 px-6 flex justify-between items-center border-b border-gray-100">
+        <div class="w-1/3">
+            <img src="tenantcheck.png" alt="TenantCheck" class="h-10 object-contain">
+        </div>
+
+        <div class="w-1/3 flex justify-center">
+            <img src="Redwood logo.png" alt="Redwood Collections" class="h-14 object-contain">
+        </div>
+
+        <div class="w-1/3 flex justify-end">
+            <a href="#" class="bg-black text-white px-6 py-2 rounded-sm font-bold uppercase tracking-widest text-sm hover:bg-gray-800 transition">HOME</a>
         </div>
     </nav>
 
-    <header class="hero-bg py-20 px-6 text-center">
+    <header class="hero-bg py-24 px-6 text-center">
         <div class="max-w-4xl mx-auto">
-            <img src="tenantcheck.png" alt="TenantCheck" class="mx-auto mb-6 h-24 object-contain">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 uppercase italic">TenantCheck</h1>
-            <p class="text-xl md:text-2xl font-semibold mb-8 text-gray-900">Professional Screening for Landlords & Agents.</p>
-            <button class="bg-black text-white px-8 py-3 rounded-md font-bold uppercase tracking-widest hover:bg-gray-800 transition">Contact Redwood</button>
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 uppercase italic tracking-tighter">TenantCheck</h1>
+            <p class="text-xl md:text-2xl font-bold mb-8 text-black uppercase tracking-wide">Instant eIDV Intelligence for Property Professionals</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-black text-white px-4 py-1 text-sm font-bold uppercase">Real Credit Data</span>
+                <span class="bg-black text-white px-4 py-1 text-sm font-bold uppercase">Zero Tenant Input</span>
+                <span class="bg-black text-white px-4 py-1 text-sm font-bold uppercase">Instant Results</span>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto py-16 px-6">
-        <div class="grid md:grid-cols-2 gap-12">
+    <main class="max-w-6xl mx-auto py-16 px-6">
+        <div class="grid md:grid-cols-3 gap-8 mb-16 text-center">
+            <div class="p-6 border-t-4 border-black bg-gray-50">
+                <h3 class="font-black text-xl mb-3 uppercase">Real Credit Data</h3>
+                <p class="text-gray-600 text-sm">Powered by eIDV technology from a UK top-tier credit referencing agency for absolute accuracy.</p>
+            </div>
+            <div class="p-6 border-t-4 border-black bg-gray-50">
+                <h3 class="font-black text-xl mb-3 uppercase">Zero Involvement</h3>
+                <p class="text-gray-600 text-sm">No forms for tenants or guarantors to fill out. Screen your portfolio quietly and efficiently.</p>
+            </div>
+            <div class="p-6 border-t-4 border-black bg-gray-50">
+                <h3 class="font-black text-xl mb-3 uppercase">Batch Screening</h3>
+                <p class="text-gray-600 text-sm">Upload entire rent rolls for instant risk assessment. Ideal for large-scale property management.</p>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-start">
             <div>
                 <h2 class="text-3xl font-bold mb-6">Firm but Fair Due Diligence</h2>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    In partnership with Redwood Collections, TenantCheck offers a robust vetting solution to protect your property portfolio from high-risk tenancies and rent arrears.
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Redwood Collections’ <strong>TenantCheck</strong> leverages advanced Electronic Identity Verification (eIDV) to provide landlords with immediate clarity. By tapping directly into primary credit referencing streams, we bypass the need for slow, manual tenant cooperation.
                 </p>
-                <ul class="space-y-3">
-                    <li class="flex items-center"><span class="text-yellow-500 mr-3">●</span> Full Sanctions & AML Screening</li>
-                    <li class="flex items-center"><span class="text-yellow-500 mr-3">●</span> Rent Arrears & Adverse Media Checks</li>
-                    <li class="flex items-center"><span class="text-yellow-500 mr-3">●</span> No Footprint on Credit Files</li>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="check-icon">✓</span>
+                        <p><strong>Anti-Money Laundering (AML):</strong> Automated KYC and PEPs/Sanctions screening.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="check-icon">✓</span>
+                        <p><strong>Identity Corroboration:</strong> Confirm names, addresses, and DOB against live credit headers.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="check-icon">✓</span>
+                        <p><strong>Financial Risk:</strong> Identify CCJs and insolvency markers before they become your problem.</p>
+                    </li>
                 </ul>
             </div>
-            <div class="border-4 border-yellow-brand p-8">
-                <h3 class="font-bold uppercase mb-2">Redwood Credit Management</h3>
-                <p class="text-sm">Providing industry-leading debt collection and credit control services since 2010.</p>
+            
+            <div class="bg-yellow-400 p-8 shadow-xl">
+                <h3 class="font-black text-xl mb-4 uppercase">Request a Batch Demo</h3>
+                <p class="text-sm mb-6">See how TenantCheck can clean your existing ledger or vet new instructions in seconds.</p>
+                <button class="w-full bg-black text-white py-4 font-bold uppercase tracking-widest hover:invert transition">Inquire Today</button>
             </div>
         </div>
     </main>
 
-    <footer class="bg-gray-100 py-8 text-center text-xs text-gray-500 uppercase tracking-widest">
-        &copy; 2026 Redwood Collections | All Rights Reserved
+    <footer class="bg-black text-white py-10 px-6 text-center">
+        <p class="text-[10px] uppercase tracking-[0.3em] mb-4 text-gray-400">&copy; 2026 Redwood Collections | All Rights Reserved</p>
+        <p class="text-[9px] text-gray-500 max-w-2xl mx-auto">TenantCheck is a data-driven screening tool provided by Redwood Collections. All searches are conducted in accordance with UK GDPR and leave no footprint on the subject's credit file.</p>
     </footer>
 
 </body>
