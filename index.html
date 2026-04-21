@@ -3,89 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TenantCheck | Redwood Collections</title>
+    <title>TenantCheck | Powered by Redwood Collections</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0f0f0f; color: white; }
-        .serif { font-family: 'Playfair Display', serif; }
-        .gold-gradient {
-            background: linear-gradient(90deg, #d4af37 0%, #f1d592 50%, #d4af37 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .bg-gold { background: #d4af37; }
-        .hero-overlay {
-            background: linear-gradient(rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 1)), url('master background.png');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('master background.png');
             background-size: cover;
             background-position: center;
+            min-height: 100vh;
         }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+        }
+        .btn-blue { background-color: #2563eb; }
+        .btn-glass { background: rgba(255, 255, 255, 0.3); backdrop-filter: blur(5px); }
     </style>
 </head>
-<body>
+<body class="antialiased">
 
-    <nav class="flex justify-between items-center px-8 py-6 border-b border-white/10">
-        <img src="tenantcheck.png" alt="TenantCheck" class="h-8">
-        <img src="Redwood logo.png" alt="Redwood Collections" class="h-12 brightness-0 invert">
-        <a href="#" class="border border-white/40 px-6 py-2 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition">HOME</a>
-    </nav>
-
-    <section class="hero-overlay py-32 px-6 text-center">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-sm font-bold tracking-[0.4em] uppercase mb-4 text-gray-400">Powered by Redwood Collections</h2>
-            <h1 class="serif text-6xl md:text-8xl mb-6 gold-gradient">TenantCheck</h1>
-            <p class="text-xl md:text-2xl font-light text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Premium eIDV Intelligence for high-yield portfolio protection. 
-                <span class="font-bold text-white">Instant. Invisible. Absolute.</span>
-            </p>
-            <div class="flex justify-center gap-6">
-                <button class="bg-gold text-black px-10 py-4 font-black uppercase text-sm tracking-widest hover:scale-105 transition">Refer Tenant</button>
-                <button class="border border-white/20 px-10 py-4 font-black uppercase text-sm tracking-widest hover:bg-white/10 transition">Batch Screening</button>
+    <div class="hero-section flex flex-col">
+        <nav class="flex justify-between items-center px-12 py-6 bg-white/90">
+            <div class="w-1/3">
+                <img src="tenantcheck.png" alt="TenantCheck" class="h-8">
             </div>
-        </div>
-    </section>
+            <div class="w-1/3 flex justify-center">
+                <img src="Redwood logo.png" alt="Redwood Collections" class="h-10">
+            </div>
+            <div class="w-1/3 flex justify-end space-x-6 text-sm font-semibold text-blue-700">
+                <a href="#" class="hover:underline">Home</a>
+            </div>
+        </nav>
 
-    <section class="max-w-6xl mx-auto py-24 px-6 grid md:grid-cols-3 gap-12">
-        <div class="glass p-10">
-            <div class="w-12 h-[2px] bg-gold mb-6"></div>
-            <h3 class="serif text-2xl mb-4">Real-Time Credit Data</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">Direct integration with top-tier credit referencing agencies. We provide the raw truth, not filtered history.</p>
-        </div>
-        <div class="glass p-10">
-            <div class="w-12 h-[2px] bg-gold mb-6"></div>
-            <h3 class="serif text-2xl mb-4">Frictionless Vetting</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">Zero tenant or guarantor involvement required. Screen your leads without alerting the market.</p>
-        </div>
-        <div class="glass p-10">
-            <div class="w-12 h-[2px] bg-gold mb-6"></div>
-            <h3 class="serif text-2xl mb-4">Enterprise Batching</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">Designed for agents. Upload full rent rolls for instant risk profiling across your entire portfolio.</p>
-        </div>
-    </section>
-
-    <section class="py-20 px-6 border-t border-white/5 bg-neutral-950">
-        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
-            <div class="md:w-1/2">
-                <h2 class="serif text-4xl mb-6 italic">"Firm but Fair"</h2>
-                <p class="text-gray-400 leading-loose mb-8">
-                    In the property sector, information is the only true defense. TenantCheck applies the Redwood Collections philosophy of professional due diligence to the onboarding process, ensuring you identify adverse media, AML risks, and arrears before they manifest.
-                </p>
-                <div class="flex items-center gap-4 text-xs font-bold tracking-widest text-gold">
-                    <span>SANCTIONS</span> • <span>PEPS</span> • <span>CCJS</span> • <span>IDENTITY</span>
+        <div class="flex-grow flex items-center px-12 py-20">
+            <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
+                
+                <div class="text-white">
+                    <h1 class="text-6xl font-extrabold leading-tight mb-6">
+                        Protect your portfolio <br>with confidence.
+                    </h1>
+                    <p class="text-xl text-white/90 mb-10 max-w-lg leading-relaxed">
+                        Instant, discreet eIDV screening of tenants and guarantors against real credit data, global sanctions, PEPs and adverse media. 
+                        <strong>No tenant involvement required.</strong>
+                    </p>
+                    <div class="flex space-x-4">
+                        <button class="btn-blue text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition">Start Screening Today</button>
+                        <button class="btn-glass text-white border border-white/50 px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition">Inquire →</button>
+                    </div>
                 </div>
+
+                <div class="flex justify-center lg:justify-end">
+                    <div class="glass-card p-10 w-full max-w-sm text-center shadow-2xl">
+                        <p class="text-xs font-bold tracking-widest text-gray-500 uppercase mb-4">Batch or Single</p>
+                        <div class="text-5xl font-black text-blue-600 mb-2">Instant</div>
+                        <p class="text-gray-600 font-semibold mb-8 text-lg">Results per search</p>
+                        
+                        <button class="w-full border-2 border-blue-600 text-blue-600 py-3 rounded-lg font-bold mb-4 hover:bg-blue-50 transition">
+                            Pre-paid search credits
+                        </button>
+                        <p class="text-xs text-gray-400">Powered by top-tier agency data. <br>No monthly subscription.</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="md:w-1/2 border border-gold/30 p-1">
-                 <div class="border border-gold/10 p-12 text-center italic text-gray-300">
-                    Proprietary eIDV Scoring Model
-                 </div>
+        </div>
+    </div>
+
+    <section class="bg-white py-20 px-12">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 text-center">
+            <div>
+                <h3 class="font-bold text-xl mb-2">Real Credit Data</h3>
+                <p class="text-gray-600">Direct integration with agency eIDV streams for live verification.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-xl mb-2">Zero Friction</h3>
+                <p class="text-gray-600">Conduct identity and risk checks without any tenant or guarantor input.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-xl mb-2">Instant Batching</h3>
+                <p class="text-gray-600">Process entire rent-rolls or new instructions in seconds via CSV.</p>
             </div>
         </div>
     </section>
-
-    <footer class="py-12 border-t border-white/10 text-center">
-        <p class="text-[10px] tracking-[0.5em] text-gray-500 uppercase">&copy; 2026 Redwood Collections Group</p>
-    </footer>
 
 </body>
 </html>
