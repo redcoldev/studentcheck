@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TenantCheck | Redwood Collections</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --brand-yellow: #FFD700;
+            --brand-dark-yellow: #E6C200;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .hero-bg { 
+            background: linear-gradient(rgba(255, 215, 0, 0.9), rgba(255, 215, 0, 0.9)), url('master background.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-yellow-brand { background-color: var(--brand-yellow); }
+        .text-yellow-brand { color: var(--brand-dark-yellow); }
+    </style>
+</head>
+<body class="bg-white">
+
+    <nav class="border-b border-gray-200 py-4 px-6 flex justify-between items-center">
+        <img src="Redwood logo.png" alt="Redwood Collections" class="h-12">
+        <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider">
+            <a href="#" class="hover:text-yellow-600">Services</a>
+            <a href="#" class="hover:text-yellow-600">Our Approach</a>
+            <a href="#" class="hover:text-yellow-600 font-bold border-b-2 border-yellow-500">TenantCheck</a>
+        </div>
+    </nav>
+
+    <header class="hero-bg py-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <img src="tenantcheck.png" alt="TenantCheck" class="mx-auto mb-6 h-24 object-contain">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 uppercase italic">TenantCheck</h1>
+            <p class="text-xl md:text-2xl font-semibold mb-8 text-gray-900">Professional Screening for Landlords & Agents.</p>
+            <button class="bg-black text-white px-8 py-3 rounded-md font-bold uppercase tracking-widest hover:bg-gray-800 transition">Contact Redwood</button>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto py-16 px-6">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Firm but Fair Due Diligence</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    In partnership with Redwood Collections, TenantCheck offers a robust vetting solution to protect your property portfolio from high-risk tenancies and rent arrears.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center"><span class="text-yellow-500 mr-3">●</span> Full Sanctions & AML Screening</li>
+                    <li class="flex items-center"><span class="text-yellow-500 mr-3">●</span> Rent Arrears & Adverse Media Checks</li>
+                    <li class="flex items-center"><span class="text-yellow-500 mr-3">●</span> No Footprint on Credit Files</li>
+                </ul>
+            </div>
+            <div class="border-4 border-yellow-brand p-8">
+                <h3 class="font-bold uppercase mb-2">Redwood Credit Management</h3>
+                <p class="text-sm">Providing industry-leading debt collection and credit control services since 2010.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-100 py-8 text-center text-xs text-gray-500 uppercase tracking-widest">
+        &copy; 2026 Redwood Collections | All Rights Reserved
+    </footer>
+
+</body>
+</html>
